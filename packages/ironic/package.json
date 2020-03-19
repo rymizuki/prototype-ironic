@@ -1,0 +1,17 @@
+{
+  "name": "@prototype-ironic/ironic",
+  "version": "0.0.0",
+  "main": "dist/ironic.js",
+  "types": "types/ironic.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
