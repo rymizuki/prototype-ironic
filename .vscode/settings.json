@@ -4,5 +4,10 @@
     "source.fixAll.eslint": true
   },
   "eslint.workingDirectories": ["."],
-  "cSpell.ignoreWords": ["nuxt"]
+  "cSpell.ignoreWords": [
+    "nuxt",
+    "nuxtjs",
+    "vue",
+    "vuex"
+  ]
 }
