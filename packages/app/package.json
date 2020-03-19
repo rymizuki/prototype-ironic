@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "@prototype-ironic/ironic": "^0.0.0",
-    "@prototype-ironic/vue-ironic": "^0.0.0"
+    "@prototype-ironic/nuxt-ironic": "^0.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

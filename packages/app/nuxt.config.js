@@ -7,8 +7,8 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
   },
-  modules: [],
-  plugins: ['~/plugins/nuxt-ironic'],
+  modules: ["@prototype-ironic/nuxt-ironic"],
+  plugins: [],
   build: {},
   buildModules: ['@nuxt/typescript-build'],
   server: {

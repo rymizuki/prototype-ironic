@@ -1,0 +1,15 @@
+{
+    "name": "@prototype-ironic/nuxt-ironic",
+    "version": "0.0.0",
+    "main": "lib/module.js",
+    "types": "types/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "@prototype-ironic/ironic": "^0.0.0",
+        "@prototype-ironic/vue-ironic": "^0.0.0"
+    }
+}

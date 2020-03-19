@@ -1,17 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "es2019",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noEmit": false,
-    "outDir": "dist",
-    "declaration": true,
-    "declarationDir": "types"
-  },
+  "extends": "../../tsconfig.json",
   "include": ["src"],
 }

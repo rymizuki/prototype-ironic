@@ -1,10 +1,16 @@
 {
   "name": "@prototype-ironic/nuxt-ironic",
+  "version": "0.0.0",
+  "main": "lib/module.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-eslint-parser": "^7.0.0"
+  },
+  "dependencies": {
+    "@prototype-ironic/ironic": "^0.0.0",
+    "@prototype-ironic/vue-ironic": "^0.0.0"
   }
 }
