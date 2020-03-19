@@ -1,11 +1,9 @@
 import Vue from 'vue'
-import VueIronic from './vue-ironic'
+import VueIronic from '@prototype-ironic/vue-ironic'
 import { Ironic } from '@prototype-ironic/ironic'
 
-export default (context: any, inject: any) => {
+export default (context: any) => {
   const ironic = new Ironic()
-
-  console.log('apply')
 
   // VueComponentでironicを有効にする
   Vue.use(VueIronic, {
