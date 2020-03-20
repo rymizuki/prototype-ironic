@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>Name: {{name}}</p>
     <input type="text" v-model="input.name" /><button
       type="button"
       @click="submit"
@@ -10,14 +11,20 @@
 </template>
 
 <script>
+import { NameModel } from '~/models/name'
+
 export default {
-  async asyncData({ $ironic }) {
-    const data = await $ironic.sync([$ironic.models.name])
-    return data
+  async fetch({ $ironic }) {
+     await $ironic.sync([NameModel])
   },
   data() {
     return {
       input: { name: null }
+    }
+  },
+  computed: {
+    name() {
+      return this.$getState(NameModel).name
     }
   },
   created() {},

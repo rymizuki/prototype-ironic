@@ -14,5 +14,8 @@
   },
   "files": [
     "dist/*"
-  ]
+  ],
+  "dependencies": {
+    "vuex": "^3.1.3"
+  }
 }

@@ -16,7 +16,6 @@
     },
     "types": ["@types/node", "@nuxt/types"],
     "declaration": true,
-    "declarationDir": "types"
   },
   "exclude": ["node_modules"]
 }

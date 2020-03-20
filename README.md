@@ -33,20 +33,22 @@ export default ({ $axios, $store, $ironic }) => {
 
 ```js
 // pages/index.vue
+import { TodoModel } from '~/models/todo'
+import { TodoRowModel } from '~/models/todo-row'
 
 export default {
   async fetch({ $ironic }) {
     await $ironic.sync([
-      $ironic.models.todo,
-      $ironic.models.todo_row
+      TodoModel,
+      TodoRowModel
     ])
   },
   computed: {
     todo_list() {
-      return this.$ironic.models.todo.getState()
+      return this.$getState(TodoModel)
     },
     todo_row() {
-      return this.$ironic.models.toro_row.getState()
+      return this.$getState(TodoRowModel)
     }
   },
   mounted() {

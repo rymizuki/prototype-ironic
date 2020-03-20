@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nlet plugin_Vue = null;\nfunction install(_Vue, options) {\n    if (plugin_Vue && plugin_Vue === _Vue) {\n        if (true) {\n            console.error('[vue-ironic] already installed. Vue.use(VueIronic) should be called only once.');\n        }\n        return;\n    }\n    plugin_Vue = _Vue;\n    const ironic = options.ironic;\n    plugin_Vue.prototype.$action = (action) => {\n        ironic.action(action);\n    };\n}\nexports.default = { install };\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nlet plugin_Vue = null;\nfunction install(_Vue, options) {\n    if (plugin_Vue && plugin_Vue === _Vue) {\n        if (true) {\n            console.error('[vue-ironic] already installed. Vue.use(VueIronic) should be called only once.');\n        }\n        return;\n    }\n    plugin_Vue = _Vue;\n    const ironic = options.ironic;\n    plugin_Vue.prototype.$getState = (Model) => {\n        return ironic.getState(Model);\n    };\n    plugin_Vue.prototype.$action = (action) => {\n        ironic.action(action);\n    };\n}\nexports.default = { install };\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 

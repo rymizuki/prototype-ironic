@@ -1,4 +1,5 @@
 import { VueConstructor } from 'vue'
+import { AbstractModel, IronicModelConstructor } from '@prototype-ironic/ironic'
 
 let plugin_Vue: VueConstructor|null = null
 function install(_Vue: VueConstructor, options: any) {
@@ -11,6 +12,10 @@ function install(_Vue: VueConstructor, options: any) {
   plugin_Vue = _Vue
 
   const ironic = options.ironic
+
+  plugin_Vue.prototype.$getState = <T extends AbstractModel> (Model: IronicModelConstructor<T>) => {
+    return ironic.getState(Model)
+  }
 
   plugin_Vue.prototype.$action = (action: any) => {
     ironic.action(action)

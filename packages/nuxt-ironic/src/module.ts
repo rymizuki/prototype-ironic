@@ -1,7 +1,6 @@
 import * as path from 'path'
-import pkg from '../package.json'
 
-export const meta = pkg
+export const meta = require('../package.json')
 
 export default function(this: any) {
   this.addPlugin({

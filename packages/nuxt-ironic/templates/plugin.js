@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueIronic from '@prototype-ironic/vue-ironic'
-import { Ironic } from '@prototype-ironic/ironic'
+import { createIronic } from '@prototype-ironic/ironic'
 
 export default (context) => {
   // create ironic instance
-  const ironic = new Ironic()
+  const ironic = createIronic()
 
   // bind Vue-Component
   Vue.use(VueIronic, { ironic })

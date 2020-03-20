@@ -6,13 +6,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const path = __importStar(require("path"));
-const package_json_1 = __importDefault(require("../package.json"));
-exports.meta = package_json_1.default;
+exports.meta = require('../package.json');
 function default_1() {
     this.addPlugin({
         src: path.resolve(__dirname, '../templates/plugin.js'),

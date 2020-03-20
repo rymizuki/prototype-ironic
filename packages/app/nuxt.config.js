@@ -8,8 +8,14 @@ module.exports = {
     ]
   },
   modules: ["@prototype-ironic/nuxt-ironic"],
-  plugins: [],
-  build: {},
+  plugins: ["~/plugins/ironic"],
+  build: {
+    babel: {
+      presets({ isServer }, [preset, options]) {
+
+      }
+    }
+  },
   buildModules: ['@nuxt/typescript-build'],
   server: {
     host: '0.0.0.0'
